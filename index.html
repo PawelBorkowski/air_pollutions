@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row p-2">
+            <div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span  id="lat">Lat: </span>
+                    </div>
+                    <input id="latInput" type="text" class="form-control" placeholder="Latitude" aria-label="Latitude"
+                        aria-describedby="lat">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="lng">Lng: </span>
+                    </div>
+                    <input id="lngInput" type="text" class="form-control" placeholder="Longtitude"
+                        aria-label="Longtitude" aria-describedby="lng">
+                </div>
+                <div id="errorPlaceholder"></div>
+                <button id="locationButton" type="button" >Get current location</button>
+                <br />
+                <br />
+                <button id="downloadButton" type="button">Download data</button>
+            </div>
+            <div id="station">
+            </div>
+            <div id="measurements"></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
